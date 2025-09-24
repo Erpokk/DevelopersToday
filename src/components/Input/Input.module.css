@@ -1,0 +1,62 @@
+.wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    max-width: 400px;
+}
+
+.wrapperInput {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 360px;
+}
+
+.input {
+    width: 100%;
+    padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input[type="number"] {
+    -moz-appearance: textfield;
+    
+}
+
+.input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.actions {
+    position: absolute;
+    right: 0.5rem;
+    display: flex;
+    gap: 0.25rem;
+}
+
+.iconBtn {
+    margin-left: 6px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+}
+
+.iconBtn:hover {
+    color: #000;
+}

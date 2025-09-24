@@ -1,0 +1,100 @@
+.toast {
+    min-width: 250px;
+    margin: 0.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0; 
+  }
+  .closeBtn {
+    display: flex;
+    margin-left: 1rem;
+    background: transparent;
+    border: none;
+    color: inherit;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .success {
+    background-color: #28a745;
+  }
+  .error {
+    background-color: #dc3545;
+  }
+  .info {
+    background-color: #007bff;
+  }
+  .warning {
+    background-color: #ffc107;
+  }
+  
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(120%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(120%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .enterSlide {
+    animation: slideIn 0.3s ease forwards;
+  }
+  .exitSlide {
+    animation: slideOut 0.3s ease forwards;
+  }
+  
+  .enterFade {
+    animation: fadeIn 0.3s ease forwards;
+  }
+  .exitFade {
+    animation: fadeOut 0.3s ease forwards;
+  }
+
+  .toastContainer {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
